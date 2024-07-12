@@ -1,4 +1,7 @@
-Node Server with Redis Cache Integration
+                    Node Server with Redis Cache Integration
+
+
+
 This Node.js server application utilizes a Redis server and cache integration to prefetch data from the database, significantly improving the loading times for the interactive dashboard. By storing data in Redis, we can handle large datasets and complex preprocessing steps required for training the LSTM model, running forecasts, and displaying historical data more efficiently.
 
 Initially, the extensive data retrieval and preprocessing led to loading times of over a minute for the dashboard. With the integration of Redis cache, loading speeds have drastically improved, providing a smoother and faster user experience.
