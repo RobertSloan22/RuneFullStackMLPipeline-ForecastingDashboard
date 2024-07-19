@@ -26,7 +26,6 @@ db_params = {
 }
 
 # MongoDB connection details
-mongo_uri = "mongodb+srv://radevai1201:szZ2HmXFRc902EeW@cluster0.b8z5ks7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 mongo_client = MongoClient(mongo_uri)
 
 # Create the SQLAlchemy engine
