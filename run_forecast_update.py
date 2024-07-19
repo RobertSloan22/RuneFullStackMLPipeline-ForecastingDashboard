@@ -7,7 +7,7 @@ import io
 import base64
 
 # Establish a connection to the MongoDB server
-client = MongoClient('mongodb+srv://radevai1201:szZ2HmXFRc902EeW@cluster0.b8z5ks7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('')
 database = client['runes']
 collection = database['GinidataRunes']
 
