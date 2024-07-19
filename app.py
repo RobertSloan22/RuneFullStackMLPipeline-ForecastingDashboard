@@ -18,12 +18,7 @@ from pymongo import MongoClient
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
 # Database connection details
-db_params = {
-    'dbname': 'sandbox',
-    'user': 'postgres',
-    'host': 'runes.csxbyr0egtki.us-east-1.rds.amazonaws.com',
-    'password': 'uIPRefz6doiqQcbpM5po'
-}
+
 
 # MongoDB connection details
 mongo_client = MongoClient(mongo_uri)
