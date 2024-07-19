@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rune Forecasting Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Rune Forecasting Dashboard</h1>
+    <div>
+        <label for="rune-select">Select Rune:</label>
+        <select id="rune-select">
+            <!-- Populate this with rune names -->
+        </select>
+        <button id="fetch-forecast">Fetch Forecast</button>
+    </div>
+    <div id="forecast-results">
+        <!-- Forecast results will be displayed here -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#fetch-forecast').on('click', function() {
+                const runeName = $('#rune-select').val();
+                if (!runeName) {
+                    alert('Please select a rune');
+                    return;
+                }
+                $.ajax({
+                    url: `/forecast?rune_name=${runeName}`,
+                    method: 'GET',
+                    success: function(data) {
+                        displayForecast(data);
+                    },
+                    error: function(err) {
+                        alert('Error fetching forecast');
+                        console.error(err);
+                    }
+                });
+            });
+
+            function displayForecast(data) {
+                const { dates, predictions } = data;
+                let resultHtml = '<h2>Forecast Results</h2>';
+                resultHtml += '<table><tr><th>Date</th><th>Prediction</th></tr>';
+                for (let i = 0; i < dates.length; i++) {
+                    resultHtml += `<tr><td>${dates[i]}</td><td>${predictions[i]}</td></tr>`;
+                }
+                resultHtml += '</table>';
+                $('#forecast-results').html(resultHtml);
+            }
+        });
+    </script>
+</body>
+</html>
