@@ -33,7 +33,7 @@ redis.on('error', (err) => {
 });
 
 // MongoDB connection details
-const uri = "mongodb+srv://radevai1201:szZ2HmXFRc902EeW@cluster0.b8z5ks7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, poolSize: 10 });
 
 client.connect(async err => {
