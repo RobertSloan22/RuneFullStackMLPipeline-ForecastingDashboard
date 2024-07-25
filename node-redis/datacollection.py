@@ -47,34 +47,7 @@ cookies = {
 }
 
 # List of channels to check
-channels = [
-    {"id": "1132706834340397116", "nickname": "Winners group chat"},
-    {"id": "1106390097378684983", "nickname": "TRAC: main-chat"},
-    {"id": "1157429728282673264", "nickname": "TRAC: pipe"},
-    {"id": "1138509209525297213", "nickname": "TRAC: tap-protocol"},
-    {"id": "1236020558488141874", "nickname": "TRAC: gib"},
-    {"id": "1115824966470991923", "nickname": "OnlyFarmers: alpha"},
-    {"id": "1166459733075579051", "nickname": "Ordicord: ordinals coding club 4/10/2024"},
-    {"id": "1224564960575623269", "nickname": "Taproot Alpha: runes"},
-    {"id": "1084525778852651190", "nickname": "DogePunks: holder-chat"},
-   # {"id": "1193842799821463553", "nickname": "DogePunks: mint-daily"},
-    {"id": "1010230594367655996", "nickname": "Tensor: alpha"},
-   # {"id": "1202401019439489104", "nickname": "Liquidium: alpha"},
-    {"id": "987504378749538366", "nickname": "Ordicord: general"},
-    {"id": "1069465367988142110", "nickname": "Ordicord: tech-support"},
-   # {"id": "1185272702156677141", "nickname": "Sower: sower-chat"},
-   # {"id": "1203043478959824967", "nickname": "Sower: vector-chat"},
-  #  {"id": "1156452754064166913", "nickname": "NATS Foundation: nats-discussion"},
-   # {"id": "1208122688887984229", "nickname": "mscribe: dmt-bitnats"},
-   #{"id": "1208122528216645662", "nickname": "mscribe: dmt-nat"},
-   # {"id": "1208122612459503686", "nickname": "mscribe: dmt-natcats"},
-   # {"id": "1227445508994240592", "nickname": "Ordicord: runes-chat"},
-   # {"id": "1210768036794081300", "nickname": "mscribe: dmt-natdogs"},
-   # {"id": "1211822035907649608", "nickname": "mscribe: dmt-natpunks"},
-   # {"id": "1212150371292807249", "nickname": "luminex-dmt"},
-   # {"id": "1213123190692253696", "nickname": "luminex-dmt-mint-status"},
-    # Add more channels as needed
-]
+
 
 def fetch_discord_messages(channel_id):
     """Fetches messages from a specified Discord channel using Discord API."""
